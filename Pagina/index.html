@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PPT</title>
+</head>
+<body>
+    <section id="starter">
+        <div class="start-screen">
+            <h1>Piedra, Pape o Tijeras! - GAME</h1>
+            <button id="play">PLAY</button>
+            <p>By: BrandoElPerro</p>
+        </div>
+    </section>
+
+    <section id="combat">
+        <div class="combat-screen">
+            <p>Elige un ataque!</p>
+
+            <p>Tus vidas: <span id="your-health"></span></p>
+            <p>Vidas del enemigo: <span id="enemy-health"></span></p>
+            <p>Victorias: <span id="win"></span></p>
+            <p>Perdidas: <span id="lose"></span></p>
+
+            <div class="cartas" id="cartas">
+                <label for="piedra" class="cartas-ataques">
+                    <p>PIEDRA</p>
+                </label>
+                <input type="radio" name="objeto" id="piedra">
+                
+                <label for="papel" class="cartas-ataques">
+                    <p>PAPEL</p>
+                </label>
+                <input type="radio" name="objeto" id="papel">
+
+                <label for="tijera" class="cartas-ataques">
+                    <p>TIJERA</p>
+                </label>
+                <input type="radio" name="objeto" id="tijera">
+            </div>
+
+            <button id="chose-attack">Seleccionar Ataque</button>
+            <button id="reset">RESET GAME</button>
+
+            <div>
+                <p>Tu ataque: <span id="ataque-nuevo-jugador"></span></p>
+                <p>Ataque del enemigo: <span id="ataque-nuevo-enemigo"></span></p>
+                <p id="mensaje-combate"></p>
+
+                <div id="result"></div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/code.js"></script>
+</body>
+</html>
